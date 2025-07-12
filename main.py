@@ -27,7 +27,7 @@ def handle_intent(text: str | None):
         now = datetime.now().strftime("%I:%M %p")
         speak(f"The time is {now}")
     elif any(word in text for word in ("exit", "quit", "stop")):
-        speak("Good‑bye!")
+        speak("Goodbye!")
         sys.exit(0)
     else:
         speak("Sorry, I don't have a skill for that yet.")
